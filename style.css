@@ -1,0 +1,62 @@
+#headPage {
+    justify-content: center;
+    align-items: center;
+}
+.music-player {
+    width: 400px;
+    height: 100px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-btn,
+.pause-btn,
+.next-btn,
+.prev-btn {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.play-btn::before {
+    content: "\25B6";
+}
+
+.pause-btn::before {
+    content: "\23F8";
+}
+
+.next-btn::before {
+    content: "\25B7\25B7";
+}
+
+.prev-btn::before {
+    content: "\25C0\25C0";
+}
+
+.song-title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    background-color: #333;
+}
